@@ -161,9 +161,7 @@ app.use(
             let endIndex = startIndex + 1;
             for (let i = startIndex; i < data.length; ++i) {    // convert dates to unix and then use binary serach for O(LOG N)
               let date = new Date(data[i].date)
-              console.log(date.getTime(), endDate.getTime())
               if (date.getTime() == endDate.getTime()) {
-                console.log('beep boop')
                 endIndex = i + 1;
                 break;
               }
@@ -175,8 +173,7 @@ app.use(
             }
           
             let slicedData = data.slice(startIndex, endIndex);
-            result.dates = slicedData;
-          console.log(result);            
+            result.dates = slicedData;          
           return result;
           })
         },
