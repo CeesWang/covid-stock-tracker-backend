@@ -187,5 +187,5 @@ mongoose
     `mongodb+srv://amber:${process.env.MONGO_PASSWORD}@cluster0-adymw.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
-  .then(app.listen(4000))
+  .then(app.listen(process.env.PORT || 4000))
   .catch((err) => console.log(err));
