@@ -8,11 +8,13 @@
     "express-graphql": "^0.9.0",
     "graphql": "^15.2.0",
     "mongoose": "^5.9.20",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "react-scripts": "3.4.1",
+    "react": "^16.13.1"
   },
   "scripts": {
     "server": "nodemon server.js",
-    "start": "react-scripts start",
+    "start": "react-scripts-start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
